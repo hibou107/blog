@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My technical blog</title>
+    <link>https://hibou107.github.io/</link>
+    <description>Recent content on My technical blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hibou107.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Designing a comparator library for regression test</title>
+      <link>https://hibou107.github.io/posts/comparator-library/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hibou107.github.io/posts/comparator-library/</guid>
+      <description>Regression test Let&amp;rsquo;s quote the defnition of regression testing from wikipedia:
+ Regression testing is a type of software testing which verifies that software which was previously developed and tested still performs the same way after it was changed or interfaced with other software. Changes may include software enhancements, patches, configuration changes, etc.
+ This kind of test is very popular in numerical library software. In such projects, the developers want to make sure that the output of the program (which are numerical values) does not change.</description>
+    </item>
+    
+    <item>
+      <title>Designing a json migration tool</title>
+      <link>https://hibou107.github.io/posts/designing-json-migration/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hibou107.github.io/posts/designing-json-migration/</guid>
+      <description>The problems Json is probably the most popular data format today. It&amp;rsquo;s used both for data exchange (between front-end and backend for example). It&amp;rsquo;s also used to store inside database like MongoDB, even postgresql supports json data type.
+Working with json means defining 2 functions:
+ A Writer that converts an object into json format A Reader that reads a json and produces an object  An example of this use case is:</description>
+    </item>
+    
+    <item>
+      <title>A json migration tool</title>
+      <link>https://hibou107.github.io/posts/json-migration/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hibou107.github.io/posts/json-migration/</guid>
+      <description>json-migration This project tries to help building a json migration framework in the same way of a database migration tool.
+The json libary used in this example is play-json
+The aim of this project is to make the migration script easy to write by people who does not have much experience in functional programming. Even experienced programmers can stuck with the Coast to coast design
+This comes with a cost because it&amp;rsquo;s not type safe: if the user wants to update a field which is a string but it&amp;rsquo;s an object in realty, then an Exception is throw.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hibou107.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://hibou107.github.io/about/</guid>
+      <description> This is me </description>
+    </item>
+    
+  </channel>
+</rss>

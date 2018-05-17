@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on My technical blog</title>
+    <link>https://hibou107.github.io/tags/test/</link>
+    <description>Recent content in Test on My technical blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hibou107.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Designing a comparator library for regression test</title>
+      <link>https://hibou107.github.io/posts/comparator-library/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://hibou107.github.io/posts/comparator-library/</guid>
+      <description>Regression test Let&amp;rsquo;s quote the defnition of regression testing from wikipedia:
+ Regression testing is a type of software testing which verifies that software which was previously developed and tested still performs the same way after it was changed or interfaced with other software. Changes may include software enhancements, patches, configuration changes, etc.
+ This kind of test is very popular in numerical library software. In such projects, the developers want to make sure that the output of the program (which are numerical values) does not change.</description>
+    </item>
+    
+  </channel>
+</rss>
