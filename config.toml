@@ -1,10 +1,10 @@
 baseURL = "https://hibou107.github.io"
 languageCode = "en-us"
 title = "My technical blog"
-pygmentsstyle = "b2"
+pygmentsstyle = "colorful"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-theme = "coder" # set the theme
+theme = "sam" # set the theme
 disqusShortname = "hibou107"
 
 [params] # theme parameters
@@ -17,23 +17,23 @@ disqusShortname = "hibou107"
     hideCredits = false
     hideCopyright = false
     
-# Social links
-[[params.social]]
-    name = "Github"
-    weight = 1
-    url = "https://github.com/hibou107"
 
-[[params.social]]
-    name = "LinkedIn"
-    weight = 3
-    url = "https://www.linkedin.com/in/hoai-nam-nguyen/"
+[[params.mainMenu]]
+    link = "/about"
+    text = "About"
 
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
+[[params.mainMenu]]
+    link = "/posts"
+    text = "Blog"
+
+[[params.mainMenu]]
+    link = "https://github.com/hibou107"
+    text = "Github"
+
+[[params.mainMenu]]
+    link = "https://stackexchange.com/users/315982/nam"
+    text = "StackOverFlow"
+
+[[params.mainMenu]]
+    link = "https://www.linkedin.com/in/hoai-nam-nguyen/"
+    text = "LinkedIn"
