@@ -7,4 +7,7 @@
 {{ range after 1 .Site.Params.mainMenu }}
 &#183; <a href="{{ .link }}">{{ .text }}</a>{{ end }}
 {{ end }}
-&#183; <a href="{{.Site.BaseURL}}">{{ .Site.Params.homepage }}</a>{{ end }}</p></div><div class="section footer">{{ partial "footer.html" . }}</div></div></body>
+&#183; <a href="{{.Site.BaseURL}}">{{ .Site.Params.homepage }}</a>{{ end }}</p></div><div class="section footer">{{ partial "footer.html" . }}</div>
+ {{ if and (not (eq .Site.DisqusShortname "" )) (eq (.Params.disable_comments | default false) false)}}
+      {{ template "_internal/disqus.html" . }}
+  {{ end }}</div></body>

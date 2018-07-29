@@ -5,17 +5,16 @@ body
         .section#content
             h1 {{ .Title }}
             p {{ .Content }}
-            ul
-                | {{ range .Data.Pages }}
-                li
-                    |
-                    | {{ if .Params.showDate }}
-                    |
-                    | {{ .Date.Format (.Site.Params.dateForm | default "Mon Jan 02, 2006")}} --
-                    |
-                    | {{ end }}
-                    a(href='{{.Permalink}}') {{.Title}}
+            | {{ range .Data.Pages }}
+            li
+                |
+                | {{ if .Params.showDate }}
+                |
+                | {{ .Date.Format (.Site.Params.dateForm | default "Mon Jan 02, 2006")}} --
+                |
                 | {{ end }}
+                a(href='{{.Permalink}}') {{.Title}}
+            | {{ end }}
         | {{ if .Site.Params.mainMenu }}
         .section.bottom-menu
             hr
