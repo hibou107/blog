@@ -15,7 +15,7 @@ Let's quote the defnition of regression testing from wikipedia:
 
 This kind of test is very popular in numerical library software. In such projects, the developers want to make sure that the output of the program (which are numerical values) does not change. The benefits are:
 
- * Safe refactoring: Developers don't be scared moving code around, renaming things as long as the tests passed
+ * Safe refactoring: Developers don't be scared of moving code around, renaming things as long as the tests passed
  * Controle: Developers can control changes they made to the library. They expect to see only the differences in some part of the library
 
 # Regression test workflow
@@ -30,7 +30,7 @@ This usual implementation of regression test consists of:
 If the test pass, then congratulation, there is nothing to do. But what if it fails ? In this case you should analyze the differences between the reference value and the new value. The quality of the comparator is essential to speed up this process. Let's have a look at an example:
 
 ## Example 1:
-You have 2 objects that are a list of thousands of elements. If you use the classic scala `==`, you only have the `True` or `False` at a result. But there are 1000 elements and you want to see which elements are differences. You want to have a message like this instead: `512 / 1.2 != 1.3` where 512 is the postion of the element
+You have 2 objects that are a list of thousands of elements. If you use the classic scala `==`, you only have the `True` or `False` at a result. But there are 1000 elements and you want to see which elements are modified. You want to have a message like this instead: `512 / 1.2 != 1.3` where 512 is the postion of the element
 
 ## Example 2:
 You have 2 objects of type Toto defined by:
@@ -38,18 +38,17 @@ You have 2 objects of type Toto defined by:
 ```scala
 case class Toto(x: X, y: Y, z: Z...)
 ```
-The comparator should tells which field contains the differences between 2 objects
+The comparator should tell which field contains the differences between 2 objects
 
 `x / left != right`
 
-The ability to compare 2 case class is particulary helpful. If the calculation represent big steps, we want to output all the intermediate steps so we can control when the bug is entered into the system.
+The ability to compare 2 case class is particulary helpful. If the calculation represents big steps, we want to output all the intermediate steps so we can control when the bug is instroduced into the system.
 
 When comparing two doubles, the comparator should take into account an acceptance error because we always have numerical error in numerical calculation: Only a little rearrangement of the function can result in some 1e-12 difference.
 
 Now there are 2 possibilities when the regression test fails: You either see what you have done is wrong and corrected it or you think the new value is the better value. For the later situation, you have to update the references values to the lastest version.
 
 Updating the reference values are risky and you should be sure about the new values. The reference values should be tracked by a CVS.
-
 
 # Designing the comparator
 
