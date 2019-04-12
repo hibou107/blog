@@ -1,4 +1,4 @@
-baseURL = "https://hibou107.github.io"
+baseURL = "https://namfp.github.io"
 languageCode = "en-us"
 title = "My technical blog"
 pygmentsstyle = "colorful"
@@ -27,7 +27,7 @@ disqusShortname = "hibou107"
     text = "Blog"
 
 [[params.mainMenu]]
-    link = "https://github.com/hibou107"
+    link = "https://github.com/namfp"
     text = "Github"
 
 [[params.mainMenu]]
