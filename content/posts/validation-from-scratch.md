@@ -147,5 +147,3 @@ def validateForm(username: String, password: String, firstName: String, lastName
 
 # Conclusion
 In this article, I've introduced the needs and a simple implementation of the validation. We quickly arrive at the point that we need a more powerful abstraction to reuse code. This is how a generic library like cats or scalaz can shine.
-
-
